@@ -1,5 +1,9 @@
 import { List1Component, List2Component} from './lists/index';
-import { CounterHostComponent, TimerHostComponent, NameCardHostComponent } from "./components/index";
+import { CounterHostComponent, 
+		TimerHostComponent, 
+		NameCardHostComponent, 
+		MessageBoxHostComponent, 
+		ChangeHostComponent } from "./components/index";
 
 
 
@@ -23,6 +27,14 @@ export const appRouts = [
 	{
 		path: "name-card",
 		component: NameCardHostComponent
+	},
+	{
+		path: "message-box",
+		component: MessageBoxHostComponent
+	},
+	{
+		path: "change",
+		component: ChangeHostComponent
 	},
 	{ 
 		path: '',

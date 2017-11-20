@@ -8,6 +8,10 @@ import {
        TimerHostComponent,
        NameCardComponent,
        NameCardHostComponent,
+       MessageBoxComponent,
+       MessageBoxHostComponent,
+       ChangeComponent,
+       ChangeHostComponent
 	   } from './index';
 
 
@@ -22,6 +26,10 @@ import {
     TimerHostComponent,
     NameCardComponent,
     NameCardHostComponent,
+    MessageBoxComponent,
+    MessageBoxHostComponent,
+    ChangeComponent,
+    ChangeHostComponent
   ]
 })
 
