@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { 
-		   CounterComponent,
-		   CounterHostComponent,
+       CounterComponent,
+       CounterHostComponent,
        TimerComponent,
        TimerHostComponent,
        NameCardComponent,
@@ -11,7 +11,9 @@ import {
        MessageBoxComponent,
        MessageBoxHostComponent,
        ChangeComponent,
-       ChangeHostComponent
+       ChangeHostComponent,
+       BlockComponent,
+       BlockHostComponent
 	   } from './index';
 
 
@@ -29,7 +31,9 @@ import {
     MessageBoxComponent,
     MessageBoxHostComponent,
     ChangeComponent,
-    ChangeHostComponent
+    ChangeHostComponent,
+    BlockComponent,
+    BlockHostComponent
   ]
 })
 

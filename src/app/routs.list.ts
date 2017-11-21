@@ -3,7 +3,9 @@ import { CounterHostComponent,
 		TimerHostComponent, 
 		NameCardHostComponent, 
 		MessageBoxHostComponent, 
-		ChangeHostComponent } from "./components/index";
+		ChangeHostComponent,
+		BlockHostComponent
+		} from "./components/index";
 
 
 
@@ -36,6 +38,10 @@ export const appRouts = [
 		path: "change",
 		component: ChangeHostComponent
 	},
+    {
+        path: "block",
+        component: BlockHostComponent
+    },
 	{ 
 		path: '',
 	    redirectTo: '/list-1',
