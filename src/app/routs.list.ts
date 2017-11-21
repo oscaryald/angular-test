@@ -7,7 +7,7 @@ import { CounterHostComponent,
 		BlockHostComponent
 		} from "./components/index";
 
-
+import { CounterParentComponent } from './serviceHierarhy/index';
 
 export const appRouts = [
 	{
@@ -41,6 +41,10 @@ export const appRouts = [
     {
         path: "block",
         component: BlockHostComponent
+    },
+    {
+        path: "service1",
+        component: CounterParentComponent,
     },
 	{ 
 		path: '',
