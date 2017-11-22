@@ -4,9 +4,12 @@ import { CounterHostComponent,
 		NameCardHostComponent, 
 		MessageBoxHostComponent, 
 		ChangeHostComponent,
-		ViewContentHostComponent } from "./components/index";
+		ViewContentHostComponent,
+		BlockHostComponent
+		} from "./components/index";
 
 import { CalcComponent } from './two-way-databinding/index';
+import { CounterParentComponent } from './serviceHierarhy/index';
 
 export const appRouts = [
 	{
@@ -45,6 +48,14 @@ export const appRouts = [
 		path: "ng-model",
 		component: CalcComponent
 	},
+    {
+        path: "block",
+        component: BlockHostComponent
+    },
+    {
+        path: "service1",
+        component: CounterParentComponent,
+    },
 	{ 
 		path: '',
 	    redirectTo: '/list-1',
