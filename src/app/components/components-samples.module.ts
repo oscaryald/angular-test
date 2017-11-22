@@ -11,7 +11,10 @@ import {
        MessageBoxComponent,
        MessageBoxHostComponent,
        ChangeComponent,
-       ChangeHostComponent
+       ChangeHostComponent,
+       ViewContentComponent,
+       ViewContentsComponent,
+       ViewContentHostComponent
 	   } from './index';
 
 
@@ -29,7 +32,10 @@ import {
     MessageBoxComponent,
     MessageBoxHostComponent,
     ChangeComponent,
-    ChangeHostComponent
+    ChangeHostComponent,
+    ViewContentComponent,
+    ViewContentsComponent,
+    ViewContentHostComponent
   ]
 })
 

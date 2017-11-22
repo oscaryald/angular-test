@@ -3,9 +3,10 @@ import { CounterHostComponent,
 		TimerHostComponent, 
 		NameCardHostComponent, 
 		MessageBoxHostComponent, 
-		ChangeHostComponent } from "./components/index";
+		ChangeHostComponent,
+		ViewContentHostComponent } from "./components/index";
 
-
+import { CalcComponent } from './two-way-databinding/index';
 
 export const appRouts = [
 	{
@@ -35,6 +36,14 @@ export const appRouts = [
 	{
 		path: "change",
 		component: ChangeHostComponent
+	},
+	{
+		path: "view-content",
+		component: ViewContentHostComponent
+	},
+	{
+		path: "ng-model",
+		component: CalcComponent
 	},
 	{ 
 		path: '',

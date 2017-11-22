@@ -8,6 +8,9 @@ export * from "./projection/message-box.component";
 export * from "./projection/message-box-host.component";
 export * from "./01_ngOnChanges/changes.component";
 export * from "./01_ngOnChanges/changes-host.component";
+export * from "./viewContent/view-content.component";
+export * from "./viewContent/view-contents.component";
+export * from "./viewContent/view-content-host.component";
 
 
 
