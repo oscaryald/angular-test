@@ -9,6 +9,10 @@ import { ComponentsSamplesModule } from './components/components-samples.module'
 import { TwoWayDataBindingModule } from './two-way-databinding/two-way-databinding.module';
 import { ServiceHierarchyModule } from './serviceHierarhy/service-hierarhy.module';
 
+import { ComponentsRoutingModule } from './routing/routing.module';
+// import { AppRouterModule } from './routingForChild/routing-for-child.module'
+
+
 import { appRouts} from "./routs.list";
 
 import { AppComponent } from './app.component';
@@ -19,12 +23,15 @@ import { AppComponent } from './app.component';
     ListsModule,
     ComponentsSamplesModule,
     TwoWayDataBindingModule,
-      ServiceHierarchyModule,
+    ServiceHierarchyModule,
+    ComponentsRoutingModule,
+    // AppRouterModule,
     FormsModule,
     RouterModule.forRoot(appRouts)
   ],
   declarations: [
     AppComponent,
+    // HomeComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

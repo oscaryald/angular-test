@@ -1,3 +1,4 @@
+
 import { List1Component, List2Component} from './lists/index';
 import { CounterHostComponent, 
 		TimerHostComponent, 
@@ -10,6 +11,11 @@ import { CounterHostComponent,
 
 import { CalcComponent } from './two-way-databinding/index';
 import { CounterParentComponent } from './serviceHierarhy/index';
+
+import { HomeComponent,
+		 PhraseListComponent,
+		 PhraseDetailsComponent,
+} from './routing/index';
 
 export const appRouts = [
 	{
@@ -55,6 +61,18 @@ export const appRouts = [
     {
         path: "service1",
         component: CounterParentComponent,
+    },
+    {
+    	path:"routes",
+    	component: HomeComponent,
+    },
+    {
+    	path:"phrases",
+    	component: PhraseListComponent,
+    },
+    {
+        path: "phrase/:id",
+        component: PhraseDetailsComponent
     },
 	{ 
 		path: '',
