@@ -17,6 +17,11 @@ import { HomeComponent,
 		 PhraseDetailsComponent,
 } from './routing/index';
 
+import {
+	Form1Component,
+	Form2Component
+} from './forms/index'
+
 export const appRouts = [
 	{
 		path:'list-1',
@@ -73,6 +78,14 @@ export const appRouts = [
     {
         path: "phrase/:id",
         component: PhraseDetailsComponent
+    },
+    {
+        path: "form1",
+        component: Form1Component
+    },
+    {
+        path: "form2",
+        component: Form2Component
     },
 	{ 
 		path: '',

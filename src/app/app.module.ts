@@ -10,6 +10,7 @@ import { TwoWayDataBindingModule } from './two-way-databinding/two-way-databindi
 import { ServiceHierarchyModule } from './serviceHierarhy/service-hierarhy.module';
 
 import { ComponentsRoutingModule } from './routing/routing.module';
+import { FormsExampleModule } from './forms/forms.module'
 // import { AppRouterModule } from './routingForChild/routing-for-child.module'
 
 
@@ -26,7 +27,7 @@ import { AppComponent } from './app.component';
     ServiceHierarchyModule,
     ComponentsRoutingModule,
     // AppRouterModule,
-    FormsModule,
+    FormsExampleModule,
     RouterModule.forRoot(appRouts)
   ],
   declarations: [
