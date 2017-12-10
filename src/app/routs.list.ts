@@ -18,9 +18,14 @@ import { HomeComponent,
 } from './routing/index';
 
 import {
-	Form1Component,
-	Form2Component
+    Form1Component,
+    Form2Component
 } from './forms/index'
+
+import {
+    GetRequestComponent,
+    PostRequestComponent
+} from './http/index'
 
 export const appRouts = [
 	{
@@ -86,6 +91,14 @@ export const appRouts = [
     {
         path: "form2",
         component: Form2Component
+    },
+    {
+        path: "http-sample1",
+        component: GetRequestComponent
+    },
+    {
+        path: "http-sample2",
+        component: PostRequestComponent
     },
 	{ 
 		path: '',

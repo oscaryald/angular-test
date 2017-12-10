@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
-
+import { HttpModule } from "@angular/http";
 import { RouterModule, Routes } from '@angular/router';
 
 import { ListsModule } from './lists/index';
@@ -11,8 +11,11 @@ import { ServiceHierarchyModule } from './serviceHierarhy/service-hierarhy.modul
 
 import { ComponentsRoutingModule } from './routing/routing.module';
 import { FormsExampleModule } from './forms/forms.module'
-// import { AppRouterModule } from './routingForChild/routing-for-child.module'
 
+import { ItemData } from "./http/inMemoryServer";
+import { InMemoryServerModule } from './http/http-sample.module'
+
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { appRouts} from "./routs.list";
 
@@ -26,9 +29,12 @@ import { AppComponent } from './app.component';
     TwoWayDataBindingModule,
     ServiceHierarchyModule,
     ComponentsRoutingModule,
-    // AppRouterModule,
+    InMemoryServerModule,
     FormsExampleModule,
-    RouterModule.forRoot(appRouts)
+    RouterModule.forRoot(appRouts),
+    HttpModule,
+    InMemoryServerModule,
+    InMemoryWebApiModule.forRoot(ItemData),
   ],
   declarations: [
     AppComponent,
